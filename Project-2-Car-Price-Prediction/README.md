@@ -1,18 +1,27 @@
 # Car Price Prediction
 ## Project Background and Overview
-The goal of this project is to predict the price of a car based on its characteristics using machine learning. The dataset, sourced from the car industry, contains 201 records and 26 attributes, with the target column being the "price." This problem is classified as a regression problem, where the target is continuous. The task is to develop the best predictive model to forecast car prices.
+The goal of this project is to predict the price of a car based on its characteristics using machine learning. 
+
+The dataset, sourced from the car industry, contains 201 records and 26 attributes, with the target column being the "price." 
+
+This problem is classified as a regression problem, where the target is continuous. The task is to develop the best predictive model to forecast car prices.
 
 ## Data Structure Overview
 Target Column: Price (Continuous numeric value).
+
 Features: 25 independent variables (including car make, model, year, mileage, etc.).
+
 Size: 201 rows and 26 columns.
 
 ## Executive Summary
 We applied various machine learning models to predict car prices, ranging from traditional regression techniques to ensemble methods:
 
 Initial models like Linear Regression and Lasso Regression achieved good r2-scores (~91.5%).
+
 Random Forest Regressor showed an r2-score of 93.4%, while XGBoost Regressor outperformed all, achieving 95.6%.
+
 Despite attempts at hyperparameter tuning, no significant improvements were seen. XGBoost was retained as the final model.
+
 ![alt text](image-6.png)
 ![alt text](image-4.png)
 ![alt text](image-5.png)
